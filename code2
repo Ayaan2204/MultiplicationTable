@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int i;
+    int a;
+    int c;
+    printf("Enter Base \n");
+    scanf("%d",&a);
+    printf("Enter maximum value of second number\n");
+    scanf("%d",&c);
+    for(i=1;i<c+1;i++)
+    {
+        printf("%d * %d = %d \n",a,i,a*i);
+    }
+}
