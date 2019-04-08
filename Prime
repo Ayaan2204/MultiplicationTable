@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int a;
+    int i;
+    int f;
+    int b;
+    int r=0;
+    printf("Enter Number\n");
+    scanf("%d",&a);
+    f=a/2;
+    for(i=2;i<=f;i++)
+    {
+        b=a%i;
+        if(b==0)
+        {
+            f=0;
+            r=1;
+        }
+    }
+    if(r==1)
+    {
+        printf("Not Prime\n");
+        printf("%d",i-1);
+    }
+    else
+    {
+        printf("Prime");
+    }
+    
+}
